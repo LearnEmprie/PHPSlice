@@ -1,6 +1,8 @@
 <?php
 
-namespace DesignPatterns\Creational\Pool;
+include_once("Worker.php");
+include_once("Processor.php");
+include_once("TestWorker.php");
 
 class Pool
 {
@@ -24,5 +26,9 @@ class Pool
     public function dispose($instance)
     {
         $this->instances[] = $instance;
+    }
+
+    public function GetInfo(){
+        return $this->instances;
     }
 }

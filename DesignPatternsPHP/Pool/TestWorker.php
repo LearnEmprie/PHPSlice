@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Creational\Pool\Tests;
+
 
 class TestWorker
 {
